@@ -1,0 +1,94 @@
+.restaurant-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .restaurant-table th,
+  .restaurant-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .restaurant-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  .restaurant-table tbody tr:nth-child(2n) {
+    background-color: #f8f8f8;
+  }
+  .comment-form-container {
+    margin-top: 20px;
+  }
+  
+  .comment-form-textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .comment-form-textarea::placeholder {
+    color: #999;
+  }
+  
+  .comment-form-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .comment-form-textarea:focus::placeholder {
+    color: transparent;
+  }
+
+
+  .comment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  
+  .comment-avatar {
+    margin-right: 8px;
+  }
+  
+  .comment-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .comment-content {
+    flex-grow: 1;
+  }
+  
+  .comment-header {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .comment-divider {
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 4px;
+  }
+  
+  .comment-text {
+    color: #333;
+    font-size: 16px;
+  }
+
+
+
+
+
+  
