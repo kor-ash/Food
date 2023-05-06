@@ -9,6 +9,5 @@ public class RestaurantDto {
     private Long restaurantId;
     private String name;
     private String address;
-    private Long companyId;
     private List<CommentDto> comments;
 }

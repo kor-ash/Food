@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import server.server.entity.Restaurant;
 import server.server.repository.RestaurantRepository;
 
+import java.util.List;
+
 @Service
 public class RestaurantService {
     private final RestaurantRepository restaurantRepository;
@@ -21,5 +23,8 @@ public class RestaurantService {
     }
     public Restaurant findByRestaurantName(String restaurantName) {
         return restaurantRepository.findByRestaurantName(restaurantName);
+    }
+    public List<Restaurant> findAll(){
+        return restaurantRepository.findAll();
     }
 }

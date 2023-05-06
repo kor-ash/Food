@@ -12,7 +12,6 @@ import java.util.List;
 @Table(name ="restaurant" )
 public class Restaurant {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "restaurant_id")
     private Long restaurantId;
     @Column(name="restaurantName")
@@ -21,4 +20,14 @@ public class Restaurant {
     private String address;
     @OneToMany(mappedBy = "restaurant")
     private List<Comment> comments;
+
+    @Override
+    public String toString() {
+        return "Restaurant{" +
+                "restaurantId=" + restaurantId +
+                ", restaurantName='" + restaurantName + '\'' +
+                ", address='" + address + '\'' +
+                ", comments=" + comments +
+                '}';
+    }
 }
